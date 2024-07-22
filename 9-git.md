@@ -14,5 +14,14 @@ One time setup per project
 
 
 for every day usagae
-1. > git status
+1. > git status  (optional)
 2. > git add .
+    or
+    git add <filename>
+    eg: git add index.html
+    eg: git add contact.html
+3. > git commit -m <commit msg>
+    eg: 
+    > git commit -m "login"
+    > git commit -m "js basics"
+4. > git push
