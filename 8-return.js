@@ -5,25 +5,21 @@ let user = {
   },
 }
 
-console.log(user.age)
 user.work()
 
 console.log(typeof 12)
 console.log(typeof true)
-console.log("bollean")
 
 function sum(firstInput, secondInput) {
   let result = firstInput + secondInput
   return result
 }
 
-// let color = "white"
-// let color = "black"
-let result
 
+let result
 function double(input) { // let input = 20
-  let result = input * 2
-  return result
+  let output = input * 2
+  return output
 }
 
 console.log("dobule of 20", double(20))
@@ -44,6 +40,7 @@ console.log("output", output)
 let myOutput = sum(double(10), double(20))
     
 // let myOutput = sum( 20 , 40)
+
 /* 
 
     let myOutput = sum( double(10) , double(20))  //  sum( 20 , 40 )
