@@ -25,3 +25,8 @@ for every day usagae
     > git commit -m "login"
     > git commit -m "js basics"
 4. > git push
+
+
+# for research
+ - branching in git
+ - forking and pull request  // open source project
