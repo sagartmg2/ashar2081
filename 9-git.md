@@ -25,3 +25,8 @@ for every day usagae
     > git commit -m "login"
     > git commit -m "js basics"
 4. > git push
+
+
+to clone others repo
+eg: 
+ > git clone https://github.com/sagartmg2/ashar2081
