@@ -89,11 +89,18 @@ let student2 =  {
 // }
 
 
-
-function checkEligibility(student){
+function checkEligibilityOld(student){
     if(student.hasPaidStatus){
         console.log(`${student.name} can give exam`);
     }else if (student.hasScholarship){
+        console.log(`${student.name} can give exam`);
+    }else{
+        console.log(`${student.name} can not give exam`);
+    }
+}
+
+function checkEligibility(student){
+    if(student.hasPaidStatus || student.hasScholarship){
         console.log(`${student.name} can give exam`);
     }else{
         console.log(`${student.name} can not give exam`);
