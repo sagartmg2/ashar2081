@@ -1,5 +1,22 @@
 const nepaliNames = ["Aarav", "Aarya", "Aasha", "Anisha"]
-let db_users = []
+let dbUsers = []
+
+for (let index = 0; index < nepaliNames.length; index++) {
+    let element = nepaliNames[index]
+    // db_users[index] = {
+    //     name: element,
+    //     email: element.toLowerCase() + "@gmail.com",
+    //     password: element.toLocaleLowerCase() + index,
+    // }
+
+    dbUsers.push({
+        name: element,
+        email: element.toLowerCase() + "@gmail.com",
+        password: element.toLowerCase() + index,
+    })
+}
+
+console.log("db_users", dbUsers)
 
 /* 
     hint 
@@ -41,4 +58,4 @@ for (let index = 0; index < numbers.length; index++) {
     doubledNumbers.push(numbers[index] * 2)
 }
 
-console.log("doubledNumbers", doubledNumbers)
+// console.log("doubledNumbers", doubledNumbers)
