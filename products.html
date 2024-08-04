@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <button onclick="fetchProductsData()">fetch products</button>
+        <p id="current-state"></p>
+        <ul id="products-list">
+            
+        </ul>
+        <script>
+            
+            function changeState(state){
+                document.getElementById("current-state").innerText = state
+            }
+        
+            function fetchProductsData() {
+                changeState("loading......")
+                fetch("https://dummyjson.com/products?11")
+                    .then((res) => res.json())
+                    .then((data) => {
+                        console.log(data)
+                        changeState("products fetched.")
+                        document.getElementById("products-list").innerHTML=`
+                            <li>static product -1 </li>
+                            <li>static product -2 </li>
+                            <li>static product -3 </li>
+                        `
+                    })
+            }
+        </script>
+    </body>
+</html>
