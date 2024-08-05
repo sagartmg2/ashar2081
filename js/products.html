@@ -16,21 +16,25 @@
             function changeState(state){
                 document.getElementById("current-state").innerText = state
             }
-        
+            
             function fetchProductsData() {
                 changeState("loading......")
                 fetch("https://dummyjson.com/products?11")
                     .then((res) => res.json())
                     .then((data) => {
-                        console.log(data)
+                        console.log(data.products)
                         changeState("products fetched.")
-                        document.getElementById("products-list").innerHTML=`
-                            <li>static product -1 </li>
-                            <li>static product -2 </li>
-                            <li>static product -3 </li>
-                        `
+
+                        let productsLi = ``
+
+                        data.products.forEach(product =>{
+                            productsLi  = productsLi + `<li>${product.title}</li>`
+                        })
+                        document.getElementById("products-list").innerHTML= productsLi
                     })
             }
+
+            // fetchProductsData()
         </script>
     </body>
 </html>
