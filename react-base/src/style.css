@@ -1,5 +1,7 @@
 .banner-image{
     max-width: 100%;
+    width:1000%;
+    height: 400px;
 }
 
 .products-list{
@@ -16,4 +18,26 @@
 
 .old-price{
     text-decoration: line-through;
+}
+
+.sale{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    /* display: inline-block; */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color:white
+
+    /* 
+        reserach on css-postitions
+            relative
+            absolute
+
+            static
+            fixed
+            sticky
+    */
 }
