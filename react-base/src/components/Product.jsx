@@ -5,7 +5,7 @@ export default function Product(props) {
             <h2>
                 {/* {props.data.name} */}
                 {product.name}
-                {product.sale ? <span className="sale">sale</span> : ""}
+                {/* {product.sale ? <span className="sale">sale</span> : ""} */}
                 {product.sale && <span className="sale">sale</span>}
             </h2>
             <p>Rs:{product.price}</p>
