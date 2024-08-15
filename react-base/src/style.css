@@ -1,3 +1,12 @@
+/* 
+reset css
+ */
+ body{
+    margin: 0;
+    /* padding: 1rem; */
+    /* padding: 16px; */
+ }
+
 .banner-image{
     max-width: 100%;
     width:1000%;
@@ -46,9 +55,12 @@
     */
 }
 
-.theme{
+
+
+.h-screen{
     height: 100vh;
 }
+
 .dark{
     background-color: #333;
     color:white
