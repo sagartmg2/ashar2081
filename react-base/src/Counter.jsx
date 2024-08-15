@@ -21,12 +21,19 @@ export default function Counter() {
         setCountValue(countValue+1)
    }
 
+   const decrement = () =>{
+        console.log("decrement");
+        // countValue = countValue -1
+        setCountValue(countValue -1)
+   }
+
     console.log("counter-render")
     return (
         <>
             <h1>normal counter variable : {value}</h1>
             <h1>satae counter variable : {countValue}</h1>
             <button onClick={increment}>increment</button>
+            <button onClick={decrement}>decrement</button>
         </>
     )
 }
